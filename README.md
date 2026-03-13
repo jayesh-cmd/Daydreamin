@@ -37,8 +37,6 @@ Bitsongs/
 ├── Server/                      # Backend (Python FastAPI)
 │   ├── app.py                   # Main server (API + streaming)
 │   ├── requirements.txt         # Python dependencies
-│   ├── Dockerfile               # Docker support
-│   ├── docker-compose.yml       # Docker Compose config
 │   ├── recommendation/          # Lightweight recommendation engine
 │   ├── data/                    # Song catalog + transition tally storage
 │   ├── tests/                   # Recommendation tests
@@ -172,6 +170,15 @@ Server audio cache is separate from recommendations:
 
 - cached audio files are stored in `Server/song_cache/`
 - when cache size goes above `600 MB`, the server clears the full audio cache
+
+## 📦 Scope
+
+This repo is now focused on:
+
+- the iOS app
+- the FastAPI mobile API
+
+The old browser-based UI, templates, and static web assets are no longer part of the project.
 
 ## ✅ Backend Checks
 
